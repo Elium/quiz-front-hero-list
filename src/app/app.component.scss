@@ -1,0 +1,124 @@
+h1,
+h2 {
+  text-align: center;
+  font-family: 'Bangers', cursive;
+  color: #0379f0;
+}
+
+ul {
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
+  height: 14px;
+  width: 14px;
+  fill: rgba(0, 0, 0, 0.87);
+}
+
+label {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.hero__container {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0 24px;
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__avatar {
+  max-height: 70px;
+  max-width: 50px;
+  overflow: hidden;
+  border-radius: 2px;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.hero__name {
+  flex: 1 1 0%;
+  margin-left: 10%;
+}
+
+.hero__alter-ego,
+.hero__power {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 25%;
+  flex: 1 1 100%;
+  font-size: 11px;
+
+  label {
+    text-align: center;
+  }
+}
+
+.hero__actions {
+  flex: 1 1 100%;
+  max-width: 15%;
+
+  button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3px;
+  }
+}
+
+.creation-form {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 0 24px;
+
+  label {
+    display: block;
+    width: 100px;
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+
+  button {
+    margin: 20px auto;
+    display: block;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background-color: #33cc99;
+    color: white;
+    border: none;
+    border-radius: 3px;
+
+    &:disabled {
+      background-color: #9efadb;
+      cursor: not-allowed;
+    }
+  }
+
+  .field-group {
+    margin-bottom: 20px;
+  }
+}
+
+input {
+  display: block;
+  width: 95%;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 0.9rem;
+  padding: 10px;
+}
